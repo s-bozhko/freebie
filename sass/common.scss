@@ -1,0 +1,137 @@
+// COMMON STYLES
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix:before {
+    display: table;
+    content: '';
+}
+
+@font-face {
+	font-family: 'MuseoSans';
+	src: url('../fonts/MuseoSans300.eot');
+	src: url('../fonts/MuseoSans300.woff') format('woff'),
+		 url('../fonts/MuseoSans300.ttf') format('truetype');
+	font-style: normal;
+	font-weight: $weight-light;
+}
+
+@font-face {
+	font-family: 'MuseoSans';
+	src: url('../fonts/MuseoSans500.eot');
+	src: url('../fonts/MuseoSans500.woff') format('woff'),
+		 url('../fonts/MuseoSans500.ttf') format('truetype');
+	font-style: normal;
+	font-weight: $weight-normal;
+}
+
+@font-face {
+	font-family: 'MuseoSans';
+	src: url('../fonts/MuseoSans500Italic.eot');
+	src: url('../fonts/MuseoSans500Italic.woff') format('woff'),
+		 url('../fonts/MuseoSans500Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: $weight-normal;
+}
+
+@font-face {
+	font-family: 'MuseoSans';
+	src: url('../fonts/MuseoSans700.eot');
+	src: url('../fonts/MuseoSans700.woff') format('woff'),
+		 url('../fonts/MuseoSans700.ttf') format('truetype');
+	font-style: normal;
+	font-weight: $weight-bold;
+}
+
+
+body {
+	margin: 0;
+	font-family: 'MuseoSans', sans-serif;
+	font-weight: $weight-normal;
+}
+
+section {
+	padding: 38px 0;
+}
+
+a {
+	text-decoration: none;
+	color: $gray;
+
+	&:hover > img, 
+	&:hover > i {
+		opacity: .8;
+		filter: alpha(opacity=80); 
+	}
+
+	&:hover > span {
+		color: darken($red, 20%) !important; 
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+h2 {
+	margin: 0;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+}
+
+
+ul {
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.gray-section {
+	border: 1px solid #e6e6e6;
+	background-color: #f8f8f8;
+}
+
+.section-heading {
+	margin-bottom: 2px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAHCAMAAAD+ktemAAAABlBMVEX9/f1GPzoiButiAAAADklEQVR4AWNgBEMIYAQAADAABf2nxBYAAAAASUVORK5CYII=) 0 11px repeat-x;
+
+	h2 {
+		display: block;
+		width: 295px;
+		margin: 0 auto;
+		background-color: #fff;
+		color: $gray;
+		font-family: 'Oswald';
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		word-spacing: -2px;
+
+		&.gray-bg {
+			background-color: #f8f8f8;
+		}
+
+		@media (max-width: 359px) {
+			width: 100%;
+			line-height: 36px;
+		}
+	}
+}
